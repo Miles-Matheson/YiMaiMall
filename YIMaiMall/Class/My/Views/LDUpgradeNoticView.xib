@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LDUpgradeNoticView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-eX-1zx">
+                    <rect key="frame" x="32" y="158" width="310" height="283"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnN-K9-TRK">
+                            <rect key="frame" x="0.0" y="40" width="310" height="0.5"/>
+                            <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="CRd-AU-ODT"/>
+                            </constraints>
+                        </view>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwg-ZW-0Sp">
+                            <rect key="frame" x="20" y="65.5" width="270" height="127.5"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </webView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="升级协议" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB4-fB-ukh">
+                            <rect key="frame" x="0.0" y="10" width="310" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sI-lm-GuN">
+                            <rect key="frame" x="20" y="213" width="270" height="45"/>
+                            <color key="backgroundColor" red="1" green="0.5450980392" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="XVy-y4-OJb"/>
+                            </constraints>
+                            <state key="normal" title="已阅读并同意此协议">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="agreeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="dUA-Vm-G3G"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="qwg-ZW-0Sp" firstAttribute="trailing" secondItem="8sI-lm-GuN" secondAttribute="trailing" id="Ajr-0g-hdG"/>
+                        <constraint firstAttribute="trailing" secondItem="qwg-ZW-0Sp" secondAttribute="trailing" constant="20" id="B4s-Lr-7YB"/>
+                        <constraint firstItem="qwg-ZW-0Sp" firstAttribute="leading" secondItem="8sI-lm-GuN" secondAttribute="leading" id="BfC-mx-fB9"/>
+                        <constraint firstAttribute="bottom" secondItem="8sI-lm-GuN" secondAttribute="bottom" constant="25" id="Erk-Xe-O91"/>
+                        <constraint firstItem="VnN-K9-TRK" firstAttribute="top" secondItem="1AS-eX-1zx" secondAttribute="top" constant="40" id="FrB-Sc-sUh"/>
+                        <constraint firstItem="qwg-ZW-0Sp" firstAttribute="leading" secondItem="1AS-eX-1zx" secondAttribute="leading" constant="20" id="GSh-fX-Rh1"/>
+                        <constraint firstItem="qwg-ZW-0Sp" firstAttribute="top" secondItem="VnN-K9-TRK" secondAttribute="bottom" constant="25" id="HkH-DJ-IfY"/>
+                        <constraint firstItem="8sI-lm-GuN" firstAttribute="top" secondItem="qwg-ZW-0Sp" secondAttribute="bottom" constant="20" id="Kxo-A8-CVc"/>
+                        <constraint firstItem="wB4-fB-ukh" firstAttribute="leading" secondItem="1AS-eX-1zx" secondAttribute="leading" id="QGQ-ht-tmo"/>
+                        <constraint firstAttribute="trailing" secondItem="8sI-lm-GuN" secondAttribute="trailing" constant="20" id="Tlc-Is-C7v"/>
+                        <constraint firstItem="VnN-K9-TRK" firstAttribute="top" secondItem="wB4-fB-ukh" secondAttribute="bottom" id="Uis-tA-qCu"/>
+                        <constraint firstAttribute="trailing" secondItem="wB4-fB-ukh" secondAttribute="trailing" id="WU2-Pw-gy7"/>
+                        <constraint firstItem="wB4-fB-ukh" firstAttribute="top" secondItem="1AS-eX-1zx" secondAttribute="top" constant="10" id="Yzb-GL-cQO"/>
+                        <constraint firstItem="VnN-K9-TRK" firstAttribute="leading" secondItem="1AS-eX-1zx" secondAttribute="leading" id="gKD-nl-9HQ"/>
+                        <constraint firstItem="8sI-lm-GuN" firstAttribute="leading" secondItem="1AS-eX-1zx" secondAttribute="leading" constant="20" id="hup-6b-zOY"/>
+                        <constraint firstAttribute="trailing" secondItem="VnN-K9-TRK" secondAttribute="trailing" id="sIZ-pM-CJX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="eds-Hj-wUi" appends="YES" id="Qd3-fq-hHt"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1AS-eX-1zx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Nn-UL-4Oe"/>
+                <constraint firstItem="1AS-eX-1zx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="158" id="3mY-AA-OyY"/>
+                <constraint firstAttribute="bottom" secondItem="1AS-eX-1zx" secondAttribute="bottom" constant="226" id="XdO-ep-68X"/>
+                <constraint firstItem="1AS-eX-1zx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="hba-TT-66F"/>
+            </constraints>
+            <connections>
+                <outlet property="baseView" destination="1AS-eX-1zx" id="0VV-mj-UnU"/>
+            </connections>
+            <point key="canvasLocation" x="-204.5" y="36.5"/>
+        </view>
+        <tapGestureRecognizer id="eds-Hj-wUi">
+            <connections>
+                <action selector="tapBaseView:" destination="iN0-l3-epB" id="8Lg-Wn-CYq"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

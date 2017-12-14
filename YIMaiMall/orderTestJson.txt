@@ -1,0 +1,58 @@
+{
+	"msg":"",
+	"obj":{
+		"addTime":"2017-09-02 09:53:59", 
+		"address":"扒齿港镇扒齿港邮局",
+		"finishTime":"",		
+		"goodsAmount":"",		
+		"hasCoupon":"0",		
+		"orderGoods":[
+			{
+				"count":29,
+				"gda":"",
+				"goodsDescribe":"",
+				"goodsId":1,
+				"goodsName":"I’m David16专柜新品爱大卫韩版春季男装长袖休闲外套DQJP11C1",
+				"imgPath":"upload/store/1/2016/04/06/2a4c105f-d92e-4268-b7e9-c2f015e1a614.jpg",
+				"storeId":"",
+				"storeName":"",
+				"totalPrice":99.00
+			},
+			{
+				"count":1,
+				"gda":"",
+				"goodsDescribe":"",
+				"goodsId":98308,
+				"goodsName":"2016新款女装小清新绣花白色欧根纱无袖连衣裙短裙子夏宽松蓬蓬裙",
+				"imgPath":"upload/store/1/2016/04/06/5806b379-d18b-4c8d-8027-181300e03105.jpg",
+				"storeId":"",
+				"storeName":"",
+				"totalPrice":235.00
+			},
+			{
+				"count":4,
+				"gda":"",
+				"goodsDescribe":"",
+				"goodsId":98331,
+				"goodsName":"Nike 耐克官方 NIKE FREE TR 6 女子训练鞋 ",
+				"imgPath":"upload/store/1/2016/04/06/2716d0c7-3e8f-4404-a182-4a1b70a63f13.png",
+				"storeId":"",
+				"storeName":"",
+				"totalPrice":600.00
+			}
+		],
+		"orderId":229498,			
+		"orderNumber":"3286020170902095359",	
+		"orderStatus":50,			
+		"paytTme":"",				
+		"returnShipTime":"",			
+		"shipTime":"",				
+		"storeId":1,
+		"storeName":"平台自营店",
+		"storeTelephone":"024-32323528",
+		"totalPrice":60.00,		
+		"transport":"",			
+		"trueName":"王丹野"
+	},
+	"state":1
+}

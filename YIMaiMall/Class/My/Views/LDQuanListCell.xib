@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="LDQuanListCell">
+            <rect key="frame" x="0.0" y="0.0" width="541" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="541" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXU-52-AtH">
+                        <rect key="frame" x="0.0" y="0.0" width="526" height="107.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRP-oT-WWU">
+                                <rect key="frame" x="15" y="0.0" width="95" height="107.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="I1Z-By-BDW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="满30元可用" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1me-7Z-FSU">
+                                <rect key="frame" x="127" y="49" width="262" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效期2017-11-22至2017-11-28" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1u-Ba-uT5">
+                                <rect key="frame" x="127" y="64" width="262" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠券" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xe-cz-QZU">
+                                <rect key="frame" x="127" y="8" width="262" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="qq2-Na-gn9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HRP-oT-WWU" firstAttribute="leading" secondItem="UXU-52-AtH" secondAttribute="leading" constant="15" id="1kk-JF-S46"/>
+                            <constraint firstItem="3xe-cz-QZU" firstAttribute="leading" secondItem="Z1u-Ba-uT5" secondAttribute="leading" id="2dd-jo-mev"/>
+                            <constraint firstItem="1me-7Z-FSU" firstAttribute="top" secondItem="3xe-cz-QZU" secondAttribute="bottom" constant="8" id="3XA-0F-5av"/>
+                            <constraint firstAttribute="bottom" secondItem="HRP-oT-WWU" secondAttribute="bottom" id="4Km-Yh-8Km"/>
+                            <constraint firstItem="3xe-cz-QZU" firstAttribute="leading" secondItem="1me-7Z-FSU" secondAttribute="leading" id="9OM-iW-s1Z"/>
+                            <constraint firstItem="3xe-cz-QZU" firstAttribute="trailing" secondItem="1me-7Z-FSU" secondAttribute="trailing" id="PDI-mk-40X"/>
+                            <constraint firstItem="1me-7Z-FSU" firstAttribute="trailing" secondItem="Z1u-Ba-uT5" secondAttribute="trailing" id="PsW-1I-UJE"/>
+                            <constraint firstItem="1me-7Z-FSU" firstAttribute="centerY" secondItem="HRP-oT-WWU" secondAttribute="centerY" id="Qer-t8-xCi"/>
+                            <constraint firstItem="Z1u-Ba-uT5" firstAttribute="top" secondItem="1me-7Z-FSU" secondAttribute="top" constant="15" id="WZb-kI-JcT"/>
+                            <constraint firstItem="Z1u-Ba-uT5" firstAttribute="top" secondItem="1me-7Z-FSU" secondAttribute="bottom" constant="5" id="YHe-C5-MOC"/>
+                            <constraint firstItem="HRP-oT-WWU" firstAttribute="top" secondItem="UXU-52-AtH" secondAttribute="top" id="bYh-T7-ZJo"/>
+                            <constraint firstItem="3xe-cz-QZU" firstAttribute="leading" secondItem="HRP-oT-WWU" secondAttribute="trailing" constant="17" id="jRz-b3-AUw"/>
+                            <constraint firstItem="3xe-cz-QZU" firstAttribute="top" secondItem="UXU-52-AtH" secondAttribute="top" constant="8" id="nNV-qs-ep4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93317049741744995" green="0.93302202224731445" blue="0.95362347364425659" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="UXU-52-AtH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7uf-fv-Veh"/>
+                    <constraint firstAttribute="trailing" secondItem="UXU-52-AtH" secondAttribute="trailing" constant="15" id="V03-ol-i8w"/>
+                    <constraint firstItem="UXU-52-AtH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kO0-B9-9RY"/>
+                    <constraint firstAttribute="bottom" secondItem="UXU-52-AtH" secondAttribute="bottom" id="pEY-5U-i5y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="baseView" destination="UXU-52-AtH" id="SiC-qo-vcr"/>
+                <outlet property="desLB" destination="1me-7Z-FSU" id="27a-02-tQ0"/>
+                <outlet property="quanImageView" destination="HRP-oT-WWU" id="2NX-BQ-R8c"/>
+                <outlet property="qunaNameLB" destination="3xe-cz-QZU" id="U8z-tC-JVV"/>
+                <outlet property="timeLB" destination="Z1u-Ba-uT5" id="52q-SE-XxX"/>
+            </connections>
+            <point key="canvasLocation" x="126.5" y="117"/>
+        </tableViewCell>
+    </objects>
+</document>
